@@ -1,0 +1,16 @@
+# Obsidian
+.obsidian/workspace*
+.obsidian/cache
+.obsidian/graph.json
+.obsidian/plugins/obsidian-git/data.json
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp
+
+# 但保留插件配置
+!.obsidian/plugins/obsidian-git/

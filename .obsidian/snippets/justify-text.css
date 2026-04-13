@@ -1,0 +1,91 @@
+/* === 全局文本两端对齐 + 微信公众号风格排版 === */
+
+/* 阅读视图 / 预览模式 - 正文段落 */
+.markdown-preview-view p {
+  text-align: justify !important;
+  text-justify: inter-ideograph !important;
+  hyphens: auto !important;
+  
+  /* 微信公众号风格排版 */
+  line-height: 1.75 !important;
+  margin-bottom: 16px !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* 列表项 */
+.markdown-preview-view ul li,
+.markdown-preview-view ol li {
+  text-align: justify !important;
+  text-justify: inter-ideograph !important;
+  line-height: 1.75 !important;
+  margin-bottom: 12px !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* 引用块 */
+.markdown-preview-view blockquote {
+  text-align: justify !important;
+  text-justify: inter-ideograph !important;
+  line-height: 1.75 !important;
+  margin-bottom: 16px !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* Callout 内容 */
+.markdown-preview-view .callout-content {
+  text-align: justify !important;
+  text-justify: inter-ideograph !important;
+  line-height: 1.75 !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* 实时预览 / 源码模式（CM6 编辑器） */
+.markdown-source-view.mod-cm6 .cm-line {
+  text-align: justify !important;
+  text-justify: inter-ideograph !important;
+  hyphens: auto !important;
+  line-height: 1.75 !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* 编辑模式段落间距 */
+.markdown-source-view.mod-cm6 .cm-line[role="textbox"] {
+  margin-bottom: 16px !important;
+}
+
+/* 编辑模式列表 */
+.markdown-source-view.mod-cm6 .cm-list-item {
+  line-height: 1.75 !important;
+  margin-bottom: 12px !important;
+}
+
+/* === 排除不需要对齐的元素 === */
+.markdown-preview-view :is(pre, code, .mathjax, h1, h2, h3, h4, h5, h6),
+.markdown-source-view.mod-cm6 :is(.cm-code-block, .cm-inline-code, .cm-math, .cm-header) {
+  text-align: left !important;
+  text-justify: initial !important;
+  hyphens: none !important;
+}
+
+/* 标题样式 */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+  margin-top: 24px !important;
+  margin-bottom: 16px !important;
+  line-height: 1.4 !important;
+  letter-spacing: 0.02em !important;
+}
+
+/* 表格内容 */
+.markdown-preview-view table {
+  line-height: 1.6 !important;
+}
+
+.markdown-preview-view table td,
+.markdown-preview-view table th {
+  padding: 12px !important;
+}
